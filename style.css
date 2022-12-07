@@ -503,6 +503,11 @@ MODAL
   font-weight: 700;
   text-align: center;
   padding: 20px;
+  z-index: -1;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 .fa-spinner {
   animation: spinner 750ms infinite linear;

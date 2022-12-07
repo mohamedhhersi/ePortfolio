@@ -7,7 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
   <script src="https://kit.fontawesome.com/2d77f23900.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("IW_1uBzWKdHTvmtMg");
+   })();
+</script>
 </head>
 
 <body>
@@ -83,7 +92,7 @@
     <div class="modal__half modal__contact">
       <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
       <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new oppurtunities.</h4>
-      <form action="" id="contact__form">
+      <form onsubmit="contact(event)" id="contact__form">
         <div class="form__item">
           <label class="form__item--label">Name</label>
           <input type="text" class="input" name="user_name" required></input>
