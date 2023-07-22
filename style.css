@@ -682,10 +682,22 @@ MODAL
     width: 100%;
     text-align: center;
   }
-  .project_-description--sub-title {
+  .project__description--sub-title {
     margin-bottom: 8px;
+    font-size: 10px;
   }
   .modal__half {
     padding: 40px;
+  }
+
+  .project__wrapper {
+    height: 100px;
+    width: 200px;
+    margin: -50px;
+    padding: 0;
+  }
+
+  .project__description--title {
+    font-size: 15px;
   }
 }
